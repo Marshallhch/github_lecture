@@ -14,7 +14,7 @@
 #fp-nav ul li a span{background:#fff; width:6px!important; height:6px!important; margin:-3px 0 0 -3px!important;}
 #fp-nav ul li a.active span{background:#d72329!important;}
 
-.header{position:fixed; width:100%; height:105px; z-index:999;}
+.header{position:fixed; width:100%; height:105px; z-index:999; top:0;}
 .header .center{height:100%; display:flex;}
 .header .logo{display:inline-block; padding-top:53px;}
 .header .logo_link{width:247px; height:18px; display:block; background:url(../img/mmenu_logo.png) no-repeat center center; background-size:cover;}
@@ -116,9 +116,10 @@ page main text common style
 /* page 2 style */
 .page_2{background:url(../img/page_bg02.jpg) no-repeat center center; background-size:cover; position:relative;}
 .page_2 .center{position:relative; height:100%;}
-.page_2 .phone_img{width:400px; height:100%; position:relative; display:inline-block;}
-.page_2 .phone_img img{width:100%; position:absolute; bottom:0;}
-.page_2 .page_txt_box{display:inline-block;position:absolute; top:50%; transform:translateY(-50%); right:0; padding-left:85px;}
+.page_2 .phone_img{width:25%; height:100%; position:relative;float:left;}
+.page_2 .phone_img img{width:100%; position:absolute; top:50%; transform:translateY(-40%);}
+.page_2 .page_txt_box{position:relative; width:72%; height:100%; float:right;}
+.page_2 .txt_box{position:absolute; top:50%; transform:translateY(-50%); padding-left:50px;}
 .page_2 .page_txt_box h2{font-size:43px; color:#fff;}
 .page_2 .page_txt_box .page_logo{position:relative; width:590px; height:41px; background:url(../img/page02_logo.png) no-repeat center center; background-size:cover; transform:translateY(70px); opacity:0; }
 .page_2 .page_txt_box .page_logo.text_up{animation:text_up 0.8s 1;animation-fill-mode:forwards;}
@@ -139,11 +140,12 @@ page main text common style
 /* page 3 style */
 .page_3{background:url(../img/page_bg03.jpg) no-repeat center center; background-size:cover; position:relative;}
 .page_3 .center{position:relative; height:100%;}
-.page_3 .phone_img{width:400px; height:100%; position:relative; display:inline-block; float:right;}
-.page_3 .phone_img img{width:100%; position:absolute; bottom:0;}
-.page_3 .page_txt_box{display:inline-block; position:absolute; top:50%; transform:translateY(-50%);}
+.page_3 .phone_img{width:25%; height:100%; position:relative; float:right;}
+.page_3 .phone_img img{width:100%; position:absolute; top:50%; transform:translateY(-40%);}
+.page_3 .page_txt_box{ position:relative;; width:72%; height:100%;float:left; text-align:right;}
+.page_3 .txt_box{position:absolute; top:50%; transform:translateY(-50%); padding-right:50px; width:100%;}
 .page_3 .page_txt_box h2{font-size:43px; color:#fff;}
-.page_3 .page_logo{position:relative; width:590px; height:41px; background:url(../img/page03_logo.png) no-repeat center center; background-size:contain; transform:translateY(70px); opacity:0;}
+.page_3 .page_logo{position:relative; width:90%; margin-left:10%; height:41px; background:url(../img/page03_logo.png) no-repeat center center; background-size:cover; transform:translateY(70px); opacity:0;}
 .page_3 .page_logo.text_up{animation:text_up 0.8s 1; animation-fill-mode:forwards;}
 
 /* @keyframes text_up{
@@ -153,7 +155,7 @@ page main text common style
 
 .page_3 .page_2_txt{padding:40px 0 60px 0;}
 .page_3 .page_2_txt p{font-size:20px; line-height:25px; color:#fff;}
-.page_3 .btn_box{text-align:left;}
+.page_3 .btn_box{text-align:right;}
 .page_3 .btn_box a{text-align:center;}
 
 /* page 4 style */
@@ -161,10 +163,10 @@ page main text common style
 .page_4 .half_bg{position:absolute; width:100%; height:45%; bottom:0; left:0; background:#c7c7c7;}
 
 .page_body{position:absolute; min-width:1200px; margin:auto; text-align:center; top:50%; left:50%; transform:translate(-50%, -50%);}
-.page_title{padding:0 0 25px 0; opacity:1;}
+.page_title{padding:0 0 25px 0; opacity:0;}
 .page_title p{font-size:26px; font-weight:bold; color:#000;}
 .page_title p:after{content:'';display:block; height:2px; margin:auto; background:#404040; width:86px;}
-.page_sub_title{padding-bottom:90px; opacity:1;}
+.page_sub_title{padding-bottom:90px; opacity:0;}
 .page_sub_title p{font-size:32px;}
 .page_sub_title span{font-weight:bold; color:#d20a11;}
 
@@ -205,10 +207,18 @@ page main text common style
 /* page 5 style */
 .page_5{position:relative;}
 .page_5 .insta_title p:after{width:150px;}
-
+.page_5 .insta_slide{opacity:0;}
 .page_5 .insta_slide_wrap{margin:0 auto; overflow:hidden;}
-.page_5 .insta_slide_box{width:1095px; margin:0 auto; overflow:hidden;}
+.page_5 .insta_slide_box{margin:0 auto; overflow:hidden;}
 .page_5 .insta_slide_inner .insta_li{float:left;}
+.page_5 .insta_slide_inner .insta_img_box{margin:0 15px; overflow:hidden;}
+.page_5 .insta_slide_inner .insta_img{width:335px; height:335px; overflow:hidden; cursor:pointer; transition:all 0.5s;}
+.page_5 .insta_slide_inner .insta_img img{width:100%;}
+
+/* .page_5 .arr_next{background:url(../img/arrow_right.png) no-repeat center center; background-size:cover; left:580px;}
+.page_5 .arr_prev{background:url(../img/arrow_left.png) no-repeat center center; background-size:cover; right:580px;} */
+
+.page_5 .slide_arr_btn{top:60%;}
 
 
 
