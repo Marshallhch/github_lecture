@@ -7,7 +7,7 @@ $(document).ready(function(){
     navigationPosition:'right',
     fixedElements: '#header',
     responsiveWidth: 730,
-    anchors:['1st', '2st', '3st', '4st', '5st'],
+    anchors:['1st', '2st', '3st', '4st', '5st', '6st'],
     afterLoad:function(anchorLink, index){
       if(anchorLink == '2st'){
         $(".main_txt_2").addClass("txt");
@@ -27,9 +27,10 @@ $(document).ready(function(){
         $(".insta_title").addClass("slide_up_1");
         $(".insta_sub_title").addClass("slide_up_2");
         $(".insta_slide").addClass("slide_up_3");
+        $(".mobile_insta_slide").addClass("slide_up_3");
       }
 
-      if(anchorLink == '4st' || anchorLink == '5st'){
+      if(anchorLink == '4st' || anchorLink == '5st' || anchorLink == '6st'){
         $(".topnav li a").css({"color":"#000"});
         $(".topnav, .hidden_sub").on("mouseleave", function(){
           $(".hidden_sub").stop().animate({height:0}, 300, function(){

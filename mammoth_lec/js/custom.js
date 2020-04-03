@@ -147,8 +147,13 @@ $(document).ready(function(){
     var winWidth=$(window).width();
     if(winWidth>=800){
       sSize(3);
+      //$(".mobile_insta_li").hide()
     } else if(winWidth<800){
       sSize(2);
+      /*$(".mobile_insta_li").hide();
+      for(var i=0; i<4; i++){
+        $(".mobile_insta_li").eq(i).show();
+      }*/
     }
   });
 
@@ -220,6 +225,9 @@ $(document).ready(function(){
   slideInit();
   instaWidth();
   instaSlide();
+
+  
+
 });
 
 
