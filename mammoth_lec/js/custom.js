@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
   //section full size
-  var winHeight=$(window).height();
-  $("section").height(winHeight);
+  //var winHeight=$(window).height();
+  //$("section").height(winHeight);
 
   //menu red underline
   $(".topnav li, .subnav_box").on("mouseenter", function(){
@@ -226,7 +226,7 @@ $(document).ready(function(){
   instaWidth();
   instaSlide();
 
-  
+
 
 });
 
